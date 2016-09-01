@@ -446,7 +446,7 @@ input:hover[type="submit"],
 .agency-pro-home .content .featured-content a.button:hover,
 .button:hover,
 .entry-content .button:hover {
-	background-color: #d7c603;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -2304,4 +2304,67 @@ Media Queries
 		background-size: contain !important;
 	}
 
+}
+
+/* custom css added below */
+
+#menu-item-55{
+	display:none;
+}
+div#wpcf7-f52-o1.wpcf7{
+    background-color: #f7f7f7;
+    border: 1px solid #000;
+    padding:1em;
+}
+input.wpcf7-form-control.wpcf7-submit{
+	margin-left: 34%;
+}
+h1.entry-title{
+	text-align:center;
+	text-decoration:underline;
+	padding-bottom:0.45em;
+}
+a.post-edit-link{
+	display:none;
+}
+input[type="text"],
+input[type="email"],
+
+{
+    background-color: #fff;
+    color: #000;
+    height: 1.5em;
+    width:95%;
+}
+textarea{
+	height:6.6em;
+}
+h4.widget-title.widgettitle{
+	text-decoration:underline;
+}
+#menu-primary li a{
+	padding:2.3em;
+}
+li.menu-item{
+	border:none;
+	height:100%; 
+}
+
+button.button.myBtn-custom{
+	margin-top:1em;
+	padding:0;
+}
+div.modal-content{
+	
+}
+
+/* custom media queries */
+@media(max-width:1025px){
+	div#wpcf7-f52-o1.wpcf7{
+    width:45%;
+    margin:0 auto;
+	}
+	.wpcf7-form-control-wrap.your-message{
+	width:90%;
+	}
 }

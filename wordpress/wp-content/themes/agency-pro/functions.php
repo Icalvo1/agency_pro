@@ -134,3 +134,16 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home Bottom', 'agency' ),
 	'description' => __( 'This is the bottom section of the homepage.', 'agency' ),
 ) );
+
+// Enqueue sticky menu script - Crunchify Tips
+add_action( 'wp_enqueue_scripts', 'agency_custom_enqueue_script' );
+function agency_custom_enqueue_script() {
+    wp_enqueue_script( 'js-modal', get_stylesheet_directory_uri() . '/js/js-modal.js', array( 'jquery' ), '', true );
+}
+//testing bootstrap enqueque
+function enqueue_my_scripts() {
+wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array('jquery'), '1.9.1', true); // we need the jquery library for bootsrap js to function
+wp_enqueue_script( 'bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array('jquery'), true); // all the bootstrap javascript goodness
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_scripts');
+
